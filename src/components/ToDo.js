@@ -8,8 +8,8 @@ const ToDo = () =>{
            <h1>My ToDos</h1>
            <ul>
             {
-                todo.map((ele)=>(
-                    <li>{ele}</li>
+                todo.map((ele,idx)=>(
+                    <li key={'todo-'+{idx}}>{ele}</li>
                 ))
             }
            </ul>
