@@ -23,8 +23,8 @@ const Memo = () =>{
            <button id="skill-btn" onClick={submitMemo}>Submit</button>
            <ul>
             {
-                memo.map((ele,idx)=>(
-                    <li key={idx}>{ele}</li>
+                memo.map((ele)=>(
+                    <li id={`item-${text}`}>{ele}</li>
                 ))
             }
            </ul>
