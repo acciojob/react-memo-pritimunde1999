@@ -1,0 +1,21 @@
+import React, { useState } from "react";
+
+const ToDo = () =>{
+    const[todo,setTodo] = useState([]);
+  
+    return(
+       <div>
+           <h1>My ToDos</h1>
+           <ul>
+            {
+                todo.map((ele)=>(
+                    <li>{ele}</li>
+                ))
+            }
+           </ul>
+           <button onClick={()=>setTodo([...todo,"New Todo"])}>Add Todo</button>
+       </div>
+    )
+}
+
+export default ToDo;
