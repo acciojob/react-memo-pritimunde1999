@@ -20,7 +20,7 @@ const Memo = () =>{
        <div>
            <h3>Memo</h3>
            <input onChange={e=>setText(e.target.value)} value={text} />
-           <button onClick={submitMemo}>Submit</button>
+           <button id="skill-input" onClick={submitMemo}>Submit</button>
            <ul>
             {
                 memo.map((ele,idx)=>(

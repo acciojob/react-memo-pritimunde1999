@@ -5,7 +5,7 @@ import Memo from "./Memo";
 
 const App = () =>{
     return(
-       <div>
+       <div id="main">
            <ToDo/>
            <Counter/>
            <Memo/>
