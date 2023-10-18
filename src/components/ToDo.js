@@ -9,7 +9,7 @@ const ToDo = () =>{
            <ul>
             {
                 todo.map((ele,idx)=>(
-                    <li key={'todo-'+{idx}}>{ele}</li>
+                    <li id={`todo-${idx}`}>{ele}</li>
                 ))
             }
            </ul>
